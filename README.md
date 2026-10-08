@@ -1,98 +1,126 @@
-# Student Grade Tracker
-> **A Clean, Professional Java & Web Application for Student Grade Management**
+# 🎓 Student Grade Tracker
+
+A lightweight and professional **Student Grade Management System** built using **Core Java, Object-Oriented Programming, Java Collections, Java HTTP Server, HTML, CSS, and Vanilla JavaScript**.
+
+The application provides a modern web dashboard for managing student grades, automatically calculating class statistics, determining letter grades and pass/fail status, and generating a comprehensive student grade summary report.
 
 ---
 
-## 1. Requirements Met
+## 📌 Overview
 
-| Requirement | Implementation Details |
-| :--- | :--- |
-| **Manage Student Grades** | Input, update, delete, and manage student grades (`0.0` to `100.0`). |
-| **Calculate Average, Highest, & Lowest** | High-performance calculation algorithms: `calculateAverage()`, `calculateHighest()`, `calculateLowest()`. |
-| **Use Arrays or ArrayLists** | `ArrayList<Student>` for dynamic data storage, and `double[]` primitive arrays for calculation loops. |
-| **Summary Report of All Students** | Formatted report detailing class average, top/lowest performers, and complete roster with grades. |
-| **GUI using HTML, CSS, and JS** | Clean, neat, and modern web interface featuring KPI cards, input form, roster table with letter grade badges, and summary modal. |
-| **No `.bat` Execution** | Directly compiled and run with standard `javac` and `java` commands. |
+**Student Grade Tracker** is an academic grade management application designed to demonstrate how a complete web-based application can be developed using **Core Java without relying on heavyweight frameworks or external databases**.
 
----
+The project combines a Java backend with a responsive frontend to provide a simple but practical grade management experience.
 
-## 2. Project Structure
+### Key capabilities
 
-```
-D:\Student Grade Tracker/
-├── Student.java          # Student model (Name, Score, Letter Grade, Status)
-├── GradeTracker.java     # ArrayList storage + double[] array statistical calculations
-├── Main.java             # Terminal report printer & built-in Java HTTP server
-├── web/
-│   ├── index.html        # Clean, modern HTML5 GUI with KPI cards and table
-│   ├── css/style.css     # Professional, neat Slate & Indigo CSS styling
-│   └── js/app.js         # Frontend controller and API integration
-└── README.md             # Project documentation
-```
+- 👨‍🎓 Add student records
+- ✏️ Edit student records
+- 🗑️ Delete student records
+- 📊 Automatically calculate class statistics
+- 🏆 Identify highest and lowest scores
+- 🏅 Automatically assign letter grades
+- ✅ Determine pass/fail status
+- 📄 Generate a complete summary report
+- 📋 Copy reports to clipboard
+- 💾 Download reports as text files
+- 📱 Responsive and modern user interface
 
 ---
 
-## 3. How to Compile & Run (No `.bat` Files)
+# 🖥️ Application Preview
 
-### Step 1: Open Terminal in Project Folder
-Open PowerShell or Command Prompt at:
-```cmd
-cd "D:\Student Grade Tracker"
-```
+## 📊 Student Grade Tracker Dashboard
 
-### Step 2: Compile Java Files
-```cmd
-javac *.java
-```
+The main dashboard provides a clean interface for managing students and monitoring overall class performance.
 
-### Step 3: Run the Application
-```cmd
-java Main
-```
+![Student Grade Tracker Dashboard](screenshots/dashboard.png)
 
-What happens:
-1. The **Summary Report** is printed immediately in your terminal.
-2. The built-in Java server starts at `http://localhost:8080`.
-3. Your default browser opens automatically to the modern web GUI!
+### Dashboard Features
 
----
-
-## 4. Standalone Web GUI Mode (Optional)
-
-You can also double-click `D:\Student Grade Tracker\web\index.html` directly in File Explorer to use the complete web interface offline in any browser.
+- **Class Average**
+- **Highest Score**
+- **Lowest Score**
+- **Total Students**
+- Add Student form
+- Student roster
+- Automatic grade calculation
+- Pass/Fail status
+- Edit student records
+- Delete student records
+- Reset demonstration data
 
 ---
 
-## 5. Sample Terminal Summary Report
+## 📄 Student Grade Summary Report
 
-```
-========================================================================
-                    STUDENT GRADE SUMMARY REPORT                        
-                    Generated on: 2026-09-17 13:46:26
-========================================================================
+The application can generate a detailed **Student Grade Summary Report** containing overall class statistics and the complete student roster.
 
-------------------------------------------------------------------------
- 1. OVERALL CLASS STATISTICS
-------------------------------------------------------------------------
-  * Total Students : 8
-  * Class Average  : 82.00%
-  * Highest Score  : 98.50% (Isabella Rossi)
-  * Lowest Score   : 54.00% (Noah Taylor)
+![Student Grade Summary Report](screenshots/summary-report.png)
 
-------------------------------------------------------------------------
- 2. COMPLETE STUDENT ROSTER
-------------------------------------------------------------------------
-No.    | Student Name               | Score    | Grade  | Status  
-------------------------------------------------------------------------
-1      | Emma Watson                |  95.50%  | A      | Passed  
-2      | James Rodriguez            |  88.00%  | B      | Passed  
-3      | Sophia Chen                |  92.50%  | A      | Passed  
-4      | Liam O'Connor              |  74.00%  | C      | Passed  
-5      | Amara Patel                |  85.00%  | B      | Passed  
-6      | Lucas Silva                |  68.50%  | D      | Passed  
-7      | Noah Taylor                |  54.00%  | F      | Failed  
-8      | Isabella Rossi             |  98.50%  | A      | Passed  
-------------------------------------------------------------------------
-                         END OF SUMMARY REPORT                          
-========================================================================
-```
+The report includes:
+
+- Report generation date and time
+- Total number of students
+- Class average
+- Highest score and student
+- Lowest score and student
+- Complete student roster
+- Individual scores
+- Letter grades
+- Pass/Fail status
+
+The report can also be:
+
+- 📋 Copied to the clipboard
+- 💾 Downloaded as a `.txt` file
+
+---
+
+# ✨ Features
+
+## 👨‍🎓 Student Management
+
+The application provides complete basic CRUD functionality for student records.
+
+### Add Student
+
+Users can enter:
+
+- Student name
+- Grade score
+
+The application validates the input before adding the student.
+
+### Edit Student
+
+Existing student records can be modified without deleting and recreating them.
+
+### Delete Student
+
+Students can be removed from the roster using the Delete action.
+
+### View Students
+
+All students are displayed in a structured and responsive table.
+
+---
+
+# 📊 Automatic Grade Calculation
+
+The application automatically converts numerical scores into letter grades.
+
+| Score Range | Grade |
+|-------------:|:-----:|
+| 90 – 100 | A |
+| 80 – 89.99 | B |
+| 70 – 79.99 | C |
+| 60 – 69.99 | D |
+| 0 – 59.99 | F |
+
+### Passing Criteria
+
+A student is considered **Passed** when:
+
+```text
+Score >= 60
