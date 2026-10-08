@@ -1,148 +1,230 @@
-🎓 Student Grade Tracker
+# 🎓 Student Grade Tracker
 
-A modern and lightweight Student Grade Management System built with Core Java, Object-Oriented Programming, Java Collections, Java HTTP Server, HTML5, CSS3, and Vanilla JavaScript.
+> A professional and lightweight web-based Student Grade Management System built using **Core Java, Object-Oriented Programming, Java Collections, Java HTTP Server, HTML5, CSS3, and Vanilla JavaScript**.
 
-The application provides a professional web dashboard for managing student grades, automatically calculating academic statistics, assigning letter grades, determining pass/fail status, and generating a detailed Student Grade Summary Report.
+---
 
-📌 Overview
+## 📌 Project Overview
 
-Student Grade Tracker is an academic grade management application designed to demonstrate how fundamental Java concepts can be used to build a complete working web application without relying on heavyweight frameworks or external databases.
+**Student Grade Tracker** is a web-based academic grade management application designed to simplify the process of managing student scores and analyzing class performance.
 
-The project combines a Core Java backend with a responsive HTML/CSS/JavaScript frontend.
+The application allows users to add, view, edit, and delete student records through a modern web interface. It automatically calculates letter grades, pass/fail status, class average, highest score, and lowest score.
 
-Key capabilities
-👨‍🎓 Add student records
-✏️ Edit student records
-🗑️ Delete student records
-📊 Calculate class statistics automatically
-🏆 Identify highest-scoring student
-📉 Identify lowest-scoring student
-🏅 Automatically calculate letter grades
-✅ Determine pass/fail status
-📄 Generate detailed summary reports
-📋 Copy reports to clipboard
-💾 Download reports as .txt
-🔄 Reset demonstration data
-📱 Responsive and modern user interface
-🖥️ Application Preview
-📊 Student Grade Tracker Dashboard
+The system also provides a **Student Grade Summary Report** that presents complete class performance information in a structured format. The generated report can be copied to the clipboard or downloaded as a text file.
 
-The main dashboard provides a clean interface for managing students and monitoring overall class performance.
+The project is intentionally developed using **Core Java and lightweight web technologies** without relying on frameworks such as Spring Boot, React, Angular, or Vue. This makes the project suitable for demonstrating fundamental Java programming, Object-Oriented Programming, Collections, HTTP communication, and frontend integration.
 
-Dashboard includes
-Class Average
-Highest Score
-Lowest Score
-Total Students
-Add Student functionality
-Student roster
-Automatic grade calculation
-Pass/Fail indicators
-Edit functionality
-Delete functionality
-Reset Demo functionality
-Summary Report generation
-📄 Student Grade Summary Report
+---
 
-The application generates a detailed Student Grade Summary Report containing class statistics and the complete student roster.
+# 🎯 Project Objective
 
-Report includes
-Report generation date and time
-Total number of students
-Class average
-Highest score
-Highest-scoring student
-Lowest score
-Lowest-scoring student
-Complete student roster
-Individual scores
-Letter grades
-Pass/Fail status
+The primary objective of this project is to develop a simple but functional student grade management system while applying fundamental programming and web development concepts.
 
-The report can be:
+The project demonstrates how:
 
-📋 Copied to Clipboard
-💾 Downloaded as a Text Report
-✨ Features
-👨‍🎓 Student Management
+- Core Java can be used to implement application logic
+- Object-Oriented Programming can organize application components
+- Java Collections can manage student records
+- A Java HTTP Server can provide backend services
+- REST-style APIs can connect frontend and backend
+- HTML, CSS, and JavaScript can create a modern user interface
+- Mathematical calculations can be used to analyze academic performance
+- Reports can be generated dynamically from application data
 
-The application provides basic CRUD operations for student records.
+---
 
-➕ Add Student
+# ✨ Key Features
 
-Users can enter:
+### 👨‍🎓 Student Management
 
-Student name
-Grade score
+- Add new student records
+- View all students
+- Edit existing student records
+- Delete student records
+- Reset demonstration data
 
-The application validates the information before adding the record.
+### 📊 Grade Management
 
-✏️ Edit Student
+- Automatic letter-grade calculation
+- Automatic Pass/Fail calculation
+- Score validation
+- Support for decimal scores
+- Score rounding
 
-Existing student records can be modified without deleting the student.
+### 📈 Class Performance
 
-🗑️ Delete Student
+- Total student count
+- Class average
+- Highest score
+- Highest-scoring student
+- Lowest score
+- Lowest-scoring student
 
-Students can be removed directly from the student roster.
+### 📄 Report Generation
 
-👀 View Student Roster
+- Generate complete Student Grade Summary Report
+- Display overall class statistics
+- Display complete student roster
+- Include individual scores
+- Include letter grades
+- Include Pass/Fail status
+- Copy report to clipboard
+- Download report as `.txt`
 
-All students are displayed in a structured table containing:
+### 🎨 User Interface
 
-Field	Description
-#	Student number
-Student Name	Student's name
-Score	Numerical score
-Grade	Automatically calculated letter grade
-Status	Passed / Failed
-Actions	Edit / Delete
-📊 Automatic Grade Calculation
+- Professional dashboard
+- Responsive layout
+- Statistics cards
+- Structured student table
+- Grade badges
+- Pass/Fail indicators
+- Interactive buttons
+- Dialog-based report display
+- Toast/notification feedback
+- Mobile-friendly design
 
-The system automatically converts numerical scores into letter grades.
+---
 
-Score	Grade
-90 – 100	A
-80 – 89.99	B
-70 – 79.99	C
-60 – 69.99	D
-0 – 59.99	F
-Passing Criteria
+# 🖥️ Application Preview
 
-A student is considered Passed when:
+## 📊 Dashboard
 
+The main dashboard provides an overview of class performance and allows users to manage student records.
+
+![Student Grade Tracker Dashboard](screenshots/dashboard.png)
+
+### Dashboard Components
+
+The dashboard provides the following information:
+
+| Component | Description |
+|---|---|
+| Class Average | Average score of all students |
+| Highest Score | Highest score recorded |
+| Lowest Score | Lowest score recorded |
+| Total Students | Number of students in the roster |
+| Add Student | Form for adding a new student |
+| Student Roster | Complete list of students |
+| Edit | Modify an existing student |
+| Delete | Remove a student |
+| Summary Report | Generate a detailed report |
+| Reset Demo | Restore demonstration data |
+
+---
+
+# 📄 Student Grade Summary Report
+
+The application includes a dedicated **Summary Report** feature.
+
+![Student Grade Summary Report](screenshots/summary-report.png)
+
+The report provides a structured overview of the class.
+
+### Report Information
+
+- Report generation date and time
+- Total number of students
+- Class average
+- Highest score
+- Highest-scoring student
+- Lowest score
+- Lowest-scoring student
+- Complete student roster
+- Student scores
+- Letter grades
+- Pass/Fail status
+
+### Report Actions
+
+The generated report can be:
+
+- 📋 Copied to the clipboard
+- 💾 Downloaded as a `.txt` file
+
+---
+
+# 📚 Grade Calculation System
+
+The application automatically assigns a letter grade based on the student's score.
+
+| Score Range | Grade |
+|---:|:---:|
+| 90 – 100 | A |
+| 80 – 89.99 | B |
+| 70 – 79.99 | C |
+| 60 – 69.99 | D |
+| 0 – 59.99 | F |
+
+---
+
+## ✅ Pass/Fail Calculation
+
+The passing score is:
+
+```text
 Score >= 60
+```
 
-Otherwise:
+Therefore:
 
-Score < 60
+```text
+Score >= 60  → Passed
+Score < 60   → Failed
+```
 
-the student is marked as Failed.
+---
 
-📈 Class Statistics
+# 📊 Class Statistics
 
-The dashboard automatically calculates overall class performance.
+The system automatically calculates class-level performance statistics.
 
-The application displays:
+### Statistics Provided
 
-Total Students
-Class Average
-Highest Score
-Highest-Scoring Student
-Lowest Score
-Lowest-Scoring Student
-Example
+#### Total Students
+
+The total number of students currently stored in the student roster.
+
+#### Class Average
+
+The average score of all students.
+
+```text
+Class Average = Sum of all student scores / Number of students
+```
+
+#### Highest Score
+
+The highest score among all students.
+
+#### Lowest Score
+
+The lowest score among all students.
+
+#### Highest-Scoring Student
+
+The student who achieved the highest score.
+
+#### Lowest-Scoring Student
+
+The student who achieved the lowest score.
+
+---
+
+# 📋 Example Class Statistics
+
+```text
 Total Students : 8
 Class Average  : 82.00%
 Highest Score  : 98.50% (Isabella Rossi)
 Lowest Score   : 54.00% (Nehal)
+```
 
-Statistics are recalculated whenever student records are added, edited, or deleted.
+---
 
-📄 Summary Report
+# 📄 Example Summary Report
 
-The Summary Report feature generates a structured report containing the overall class performance and complete student roster.
-
-Example
+```text
 ======================================================================
                      STUDENT GRADE SUMMARY REPORT
                     Generated on: 10/8/2026, 9:53:23 PM
@@ -171,83 +253,121 @@ No.   | Student Name          | Score   | Grade | Status
 6     | Lucky                 | 68.50%  | D     | Passed
 7     | Nehal                 | 54.00%  | F     | Failed
 8     | Isabella Rossi        | 98.50%  | A     | Passed
-🏗️ System Architecture
-┌──────────────────────────────────────────────┐
-│                WEB FRONTEND                  │
-│                                              │
-│          HTML + CSS + JavaScript             │
-└──────────────────────┬───────────────────────┘
-                       │
-                       │ HTTP / JSON
-                       ▼
-┌──────────────────────────────────────────────┐
-│               JAVA BACKEND                   │
-│                                              │
-│          Java HTTP Server                    │
-│        com.sun.net.httpserver                │
-│                                              │
-│  ┌────────────────────────────────────────┐  │
-│  │             API Handler                │  │
-│  │                                        │  │
-│  │  GET / POST / PUT / DELETE             │  │
-│  └────────────────────┬───────────────────┘  │
-│                       │                      │
-│                       ▼                      │
-│  ┌────────────────────────────────────────┐  │
-│  │           GradeTracker                 │  │
-│  │                                        │  │
-│  │     Business Logic & Statistics        │  │
-│  └────────────────────┬───────────────────┘  │
-│                       │                      │
-│                       ▼                      │
-│  ┌────────────────────────────────────────┐  │
-│  │              Student                   │  │
-│  │             Data Model                 │  │
-│  └────────────────────────────────────────┘  │
-└──────────────────────────────────────────────┘
-🔄 Application Workflow
-                    ┌──────────────────┐
-                    │ Start Application│
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │ Java HTTP Server │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │  Web Dashboard   │
-                    └────────┬─────────┘
-                             │
-             ┌───────────────┼───────────────┐
-             │               │               │
-             ▼               ▼               ▼
-        Add Student     Edit Student   Delete Student
-             │               │               │
-             └───────────────┼───────────────┘
-                             │
-                             ▼
-                 ┌─────────────────────┐
-                 │ Automatic Calculation│
-                 └──────────┬──────────┘
-                            │
-             ┌──────────────┼──────────────┐
-             ▼              ▼              ▼
-          Average        Highest        Lowest
-             │              │              │
-             └──────────────┼──────────────┘
-                            │
-                            ▼
-                  ┌──────────────────┐
-                  │  Summary Report  │
-                  └────────┬─────────┘
+```
+
+---
+
+# 🏗️ System Architecture
+
+The application follows a lightweight client-server architecture.
+
+```text
+                    ┌─────────────────────────┐
+                    │       WEB BROWSER       │
+                    │                         │
+                    │   HTML + CSS + JS       │
+                    └────────────┬────────────┘
+                                 │
+                                 │ HTTP / JSON
+                                 ▼
+                    ┌─────────────────────────┐
+                    │      JAVA BACKEND       │
+                    │                         │
+                    │    Java HTTP Server     │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │       API HANDLER       │
+                    │                         │
+                    │ GET / POST / PUT /      │
+                    │ DELETE                  │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │      GRADE TRACKER      │
+                    │                         │
+                    │ Business Logic          │
+                    │ Statistics              │
+                    │ Report Generation       │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │        STUDENT          │
+                    │                         │
+                    │ Data Model              │
+                    │ Name                    │
+                    │ Score                   │
+                    │ Grade                   │
+                    │ Status                  │
+                    └─────────────────────────┘
+```
+
+---
+
+# 🔄 Application Workflow
+
+```text
+                         START
                            │
-                    ┌──────┴──────┐
-                    ▼             ▼
-                 Copy          Download
-📁 Project Structure
-StudentGradeTracker/
+                           ▼
+                 ┌──────────────────┐
+                 │ Start Java Server│
+                 └────────┬─────────┘
+                          │
+                          ▼
+                 ┌──────────────────┐
+                 │  Open Dashboard  │
+                 └────────┬─────────┘
+                          │
+             ┌────────────┼────────────┐
+             │            │            │
+             ▼            ▼            ▼
+        Add Student   Edit Student  Delete Student
+             │            │            │
+             └────────────┼────────────┘
+                          │
+                          ▼
+                 ┌──────────────────┐
+                 │ Validate Input   │
+                 └────────┬─────────┘
+                          │
+                          ▼
+                 ┌──────────────────┐
+                 │ Update Student   │
+                 │ Collection       │
+                 └────────┬─────────┘
+                          │
+                          ▼
+                 ┌──────────────────┐
+                 │ Calculate Grades │
+                 │ & Statistics     │
+                 └────────┬─────────┘
+                          │
+             ┌────────────┼────────────┐
+             ▼            ▼            ▼
+          Average      Highest       Lowest
+             │            │            │
+             └────────────┼────────────┘
+                          │
+                          ▼
+                 ┌──────────────────┐
+                 │ Generate Report  │
+                 └────────┬─────────┘
+                          │
+                   ┌──────┴──────┐
+                   ▼             ▼
+                Copy          Download
+```
+
+---
+
+# 📁 Project Structure
+
+```text
+CodeAlpha_Student_Grade_Tracker/
 │
 ├── Main.java
 ├── GradeTracker.java
@@ -267,108 +387,162 @@ StudentGradeTracker/
 │   └── summary-report.png
 │
 └── README.md
-🧩 Core Components
-Student.java
+```
 
-Represents an individual student.
+---
 
-Responsibilities
-Store student information
-Store numerical score
-Validate student data
-Calculate letter grade
-Determine pass/fail status
-Round scores to two decimal places
-GradeTracker.java
+# 🧩 Project Components
 
-Contains the main business logic.
+## 1. `Student.java`
 
-Responsibilities
-Manage student records
-Add students
-Update students
-Remove students
-Calculate class average
-Find highest score
-Find lowest score
-Identify highest-scoring student
-Identify lowest-scoring student
-Generate summary reports
-Manage demonstration data
+The `Student` class represents an individual student.
 
-The application uses:
+### Responsibilities
 
+- Store student name
+- Store student score
+- Validate student information
+- Calculate letter grade
+- Determine Pass/Fail status
+- Round score values
+- Provide student information to other components
+
+### Student Data
+
+Each student contains information such as:
+
+```text
+Name
+Score
+Grade
+Status
+```
+
+---
+
+# 2. `GradeTracker.java`
+
+The `GradeTracker` class contains the main business logic.
+
+### Responsibilities
+
+- Store student records
+- Add students
+- Update students
+- Remove students
+- Retrieve students
+- Calculate average score
+- Find highest score
+- Find lowest score
+- Identify highest-scoring student
+- Identify lowest-scoring student
+- Generate summary reports
+- Reset demonstration data
+
+The application uses Java's:
+
+```java
 ArrayList<Student>
+```
 
-as its primary in-memory collection.
+to store student records in memory.
 
-Main.java
+---
 
-Acts as the application entry point and Java HTTP server.
+# 3. `Main.java`
 
-Responsibilities
-Start the HTTP server
-Listen on port 8080
-Handle API requests
-Serve frontend files
-Process JSON requests
-Return JSON responses
-Open the application in the default browser
-web/index.html
+`Main.java` acts as the entry point of the application and starts the Java HTTP server.
 
-Defines the structure of the web dashboard.
+### Responsibilities
 
-Contains:
+- Start the application
+- Create the Java HTTP server
+- Listen on port `8080`
+- Handle HTTP requests
+- Route API requests
+- Serve frontend files
+- Process JSON data
+- Return JSON responses
+- Open the application in the default browser
 
-Application header
-Statistics cards
-Student form
-Student roster
-Edit/Delete actions
-Summary Report dialog
-Action buttons
-web/css/style.css
+---
 
-Controls the application's user interface.
+# 4. `web/index.html`
 
-Includes styling for:
+The HTML file defines the structure of the web application.
 
-Dashboard layout
-Statistics cards
-Forms
-Tables
-Buttons
-Grade badges
-Pass/Fail badges
-Dialogs
-Notifications
-Responsive layouts
-web/js/app.js
+### Contains
 
-Controls frontend functionality.
+- Application header
+- Dashboard
+- Statistics cards
+- Add Student form
+- Student roster
+- Action buttons
+- Summary Report dialog
+- Report controls
 
-Responsibilities
-Communicate with the Java backend
-Fetch student records
-Add students
-Edit students
-Delete students
-Update statistics
-Render the student table
-Generate reports
-Copy reports to clipboard
-Download text reports
-Handle LocalStorage fallback
-🔌 REST-Style API
+---
 
-The backend provides lightweight REST-style HTTP endpoints.
+# 5. `web/css/style.css`
 
-Get All Students
+The CSS file controls the visual appearance of the application.
+
+### Includes
+
+- Dashboard layout
+- Responsive design
+- Statistics cards
+- Student table
+- Buttons
+- Forms
+- Grade badges
+- Pass/Fail badges
+- Dialog styling
+- Notifications
+- Mobile-friendly layout
+
+---
+
+# 6. `web/js/app.js`
+
+The JavaScript file provides frontend functionality.
+
+### Responsibilities
+
+- Communicate with backend APIs
+- Fetch student records
+- Add students
+- Edit students
+- Delete students
+- Update dashboard statistics
+- Render student table
+- Calculate/display information
+- Generate reports
+- Copy reports
+- Download reports
+- Handle user interactions
+- Manage LocalStorage fallback
+
+---
+
+# 🔌 REST-Style API
+
+The backend provides lightweight REST-style API endpoints.
+
+---
+
+## GET All Students
+
+```http
 GET /api/students
+```
 
 Returns all student records.
 
-Example
+### Example Response
+
+```json
 [
   {
     "name": "Eshwar",
@@ -377,28 +551,65 @@ Example
     "status": "Passed"
   }
 ]
-Add Student
+```
+
+---
+
+## POST Add Student
+
+```http
 POST /api/students
-Example Request
+```
+
+### Example Request
+
+```json
 {
   "name": "Emma Watson",
   "score": 88.5
 }
-Update Student
+```
+
+---
+
+## PUT Update Student
+
+```http
 PUT /api/students?index=0
-Example Request
+```
+
+### Example Request
+
+```json
 {
   "name": "Emma Watson",
   "score": 91.5
 }
-Delete Student
+```
+
+---
+
+## DELETE Student
+
+```http
 DELETE /api/students?index=0
+```
 
 Deletes the student at the specified index.
 
-Get Class Summary
+---
+
+## GET Class Summary
+
+```http
 GET /api/summary
-Example Response
+```
+
+Returns class-level statistics.
+
+### Example Response
+
+```json
 {
   "total": 8,
   "average": 82.0,
@@ -407,165 +618,318 @@ Example Response
   "lowest": 54.0,
   "lowestStudent": "Nehal"
 }
-Generate Report
+```
+
+---
+
+## GET Report
+
+```http
 GET /api/report
+```
 
-Returns the formatted Student Grade Summary Report.
+Generates the Student Grade Summary Report.
 
-Reset Demonstration Data
+---
+
+## POST Reset
+
+```http
 POST /api/reset
+```
 
-Restores the default demonstration data.
+Restores the demonstration student data.
 
-🛠️ Technologies Used
-Backend
-Java
-Core Java
-Object-Oriented Programming
-Java Collections
-ArrayList
-Java HTTP Server
-JSON request/response handling
-Java I/O
-Java Time API
-ExecutorService
-Frontend
-HTML5
-CSS3
-Vanilla JavaScript
-Fetch API
-LocalStorage API
-DOM manipulation
-HTML Dialog API
-Responsive CSS
-🚫 Frameworks and External Dependencies
+---
+
+# 🛠️ Technologies Used
+
+## Backend Technologies
+
+- Java
+- Core Java
+- Object-Oriented Programming
+- Java Collections Framework
+- `ArrayList`
+- Java HTTP Server
+- HTTP request handling
+- JSON processing
+- Java I/O
+- Java Time API
+- `ExecutorService`
+
+## Frontend Technologies
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Fetch API
+- DOM Manipulation
+- LocalStorage API
+- Clipboard API
+- HTML Dialog API
+- Responsive CSS
+
+---
+
+# 🧠 Core Java Concepts Demonstrated
+
+This project demonstrates several fundamental Java concepts.
+
+### Classes and Objects
+
+The project uses classes such as:
+
+```text
+Student
+GradeTracker
+Main
+```
+
+### Encapsulation
+
+Student information and related operations are organized within the `Student` class.
+
+### Collections
+
+Student records are managed using:
+
+```java
+ArrayList<Student>
+```
+
+### Methods
+
+Separate methods are used for:
+
+- Adding students
+- Updating students
+- Deleting students
+- Calculating grades
+- Calculating statistics
+- Generating reports
+
+### Exception Handling
+
+Input and application errors are handled to prevent invalid operations from crashing the application.
+
+### Input Validation
+
+Scores and student names are validated before processing.
+
+---
+
+# 🚫 Frameworks and External Dependencies
 
 The project intentionally avoids heavyweight frameworks.
 
+```text
 Spring Boot       ❌
 Hibernate         ❌
 MySQL             ❌
 MongoDB           ❌
 React             ❌
-Angular            ❌
-Vue                ❌
-Node.js            ❌
+Angular           ❌
+Vue               ❌
+Node.js           ❌
+```
 
-Instead, it demonstrates how a functional web application can be created using:
+The application is built using:
 
+```text
 Core Java
     +
 Java HTTP Server
     +
-HTML
+HTML5
     +
-CSS
+CSS3
     +
 Vanilla JavaScript
-💻 Requirements
+```
 
-To run the project locally, you need:
+This keeps the project lightweight and focuses on fundamental programming concepts.
 
-Java JDK 11 or later
-Modern web browser
-Git — optional
+---
 
-No database server is required.
+# 💻 Requirements
 
-No separate backend server is required.
+Before running the application, make sure you have:
 
-🚀 Getting Started
-1. Clone the Repository
+- Java JDK 11 or later
+- Modern web browser
+- Git (optional)
+
+### No Database Required
+
+The application does not require:
+
+- MySQL
+- MongoDB
+- PostgreSQL
+- Oracle Database
+- Any external database server
+
+### No External Backend Server Required
+
+The Java application itself starts the HTTP server.
+
+---
+
+# 🚀 Installation and Setup
+
+## Step 1: Clone the Repository
+
+```bash
 git clone https://github.com/chidananda-p/CodeAlpha_Student_Grade_Tracker.git
-2. Navigate to the Project
+```
+
+---
+
+## Step 2: Navigate to the Project
+
+```bash
 cd CodeAlpha_Student_Grade_Tracker
-3. Compile the Java Source Files
+```
+
+---
+
+## Step 3: Compile the Java Files
+
+```bash
 javac Student.java GradeTracker.java Main.java
-4. Start the Application
+```
+
+---
+
+## Step 4: Start the Application
+
+```bash
 java Main
+```
 
-The application starts the Java HTTP server on:
+The Java HTTP server will start on:
 
+```text
 http://localhost:8080
+```
 
-The application attempts to open the browser automatically.
+The application may automatically open the default browser.
 
-If it does not open automatically, open:
+If the browser does not open automatically, manually visit:
 
+```text
 http://localhost:8080
+```
 
-in your browser.
+---
 
-5. Stop the Application
+# 🛑 Stopping the Application
 
-Press:
+To stop the application, press:
 
+```text
 Ctrl + C
+```
 
 in the terminal.
 
-🧪 Input Validation
+---
 
-The application validates user input before processing it.
+# 🧪 Input Validation
 
-Student Name
+The application validates user input before adding or updating students.
+
+## Student Name Validation
 
 The student name:
 
-Cannot be empty
-Is trimmed before processing
-Score
+- Cannot be empty
+- Is trimmed before processing
 
-The score:
+### Example
 
-Must be between 0 and 100
-Supports decimal values
-Is rounded to two decimal places
-Valid Examples
+```text
+Valid:
+Eshwar
+Jaydev
+Isabella Rossi
+
+Invalid:
+(empty)
+```
+
+---
+
+## Score Validation
+
+Scores must be between:
+
+```text
+0 and 100
+```
+
+### Valid Examples
+
+```text
 95
 88.5
 72.25
 60
-Invalid Examples
+0
+100
+```
+
+### Invalid Examples
+
+```text
 -10
 105
 abc
-💾 Data Storage
+```
 
-The current version primarily stores student records in memory using Java's ArrayList.
+---
 
+# 💾 Data Storage
+
+The current version primarily stores student records **in memory using Java's `ArrayList`**.
+
+```java
 ArrayList<Student>
+```
 
-This approach keeps the application lightweight and allows the project to demonstrate Java Collections and business logic without requiring a database.
+This approach keeps the project lightweight and allows the application to demonstrate Java Collections without requiring a database.
 
-Important
+### Data Persistence
 
-Because the Java backend currently uses in-memory storage, server-side student records are not intended to provide permanent database-style persistence after restarting the server.
+Because the Java backend uses in-memory storage, server-side student records are not intended to provide permanent database-style persistence after restarting the server.
 
-The frontend also provides LocalStorage fallback functionality for appropriate standalone usage.
+The frontend also provides LocalStorage fallback functionality where applicable.
 
-📊 Sample Data
+---
 
-The application can be demonstrated using the following student records:
+# 📊 Sample Student Data
 
-#	Student	Score	Grade	Status
-1	Eshwar	95.50%	A	Passed
-2	Jaydev	88.00%	B	Passed
-3	Sonu	92.50%	A	Passed
-4	Lohith	74.00%	C	Passed
-5	Amar	85.00%	B	Passed
-6	Lucky	68.50%	D	Passed
-7	Nehal	54.00%	F	Failed
-8	Isabella Rossi	98.50%	A	Passed
-Example Statistics
-Total Students : 8
-Class Average  : 82.00%
-Highest Score  : 98.50%
-Lowest Score   : 54.00%
-🧮 Grade Calculation Logic
+The application can be demonstrated using sample student records such as:
 
-The application uses threshold-based grade calculation.
+| # | Student | Score | Grade | Status |
+|---:|---|---:|:---:|:---:|
+| 1 | Eshwar | 95.50% | A | Passed |
+| 2 | Jaydev | 88.00% | B | Passed |
+| 3 | Sonu | 92.50% | A | Passed |
+| 4 | Lohith | 74.00% | C | Passed |
+| 5 | Amar | 85.00% | B | Passed |
+| 6 | Lucky | 68.50% | D | Passed |
+| 7 | Nehal | 54.00% | F | Failed |
+| 8 | Isabella Rossi | 98.50% | A | Passed |
 
+---
+
+# 🧮 Grade Calculation Logic
+
+The application follows a simple threshold-based grading system.
+
+```java
 if (score >= 90.0) {
     return "A";
 }
@@ -583,148 +947,322 @@ if (score >= 60.0) {
 }
 
 return "F";
-Pass/Fail
-score >= 60.0
-🎯 Learning Objectives
+```
 
-This project demonstrates practical knowledge of:
+---
 
-Core Java
-Classes
-Objects
-Methods
-Constructors
-Encapsulation
-Exception handling
-Input validation
-Object-Oriented Programming
-Data modeling
-Encapsulation
-Separation of responsibilities
-Business logic organization
-Java Collections
-ArrayList
-Iteration
-Searching
-Updating elements
-Removing elements
-Aggregate calculations
-Backend Development
-HTTP server creation
-HTTP request handling
-API routing
-JSON responses
-Static file serving
-Multithreaded request handling
-Frontend Development
-HTML structure
-CSS styling
-Responsive layouts
-JavaScript
-DOM manipulation
-Fetch API
-LocalStorage
-Clipboard API
-📸 Screenshots
-Main Dashboard("D:\CodeAlpha Ptojects\StudentGradeTracker\Screenshot 2026-10-08 215316.png")
+# ✅ Pass/Fail Logic
 
-The dashboard provides a complete overview of student performance and allows users to manage student records.
+```java
+if (score >= 60.0) {
+    return "Passed";
+}
 
-Summary Report("D:\CodeAlpha Ptojects\StudentGradeTracker\Screenshot 2026-10-08 215332.png")
+return "Failed";
+```
 
-The Summary Report provides a structured overview of class performance and individual student results.
+---
 
-🔮 Future Enhancements
+# 📈 Average Calculation
 
-The current version focuses on Core Java, Collections, HTTP communication, and lightweight web development.
+The class average is calculated using:
 
-Possible future improvements include:
+```text
+Average = Total of all student scores / Number of students
+```
 
- MySQL database integration
- Student ID / Roll Number
- Subject-wise marks
- Multiple subjects per student
- Semester-wise grade management
- Search functionality
- Student filtering
- Sorting by score
- Sorting by name
- Attendance management
- User authentication
- Admin dashboard
- PDF report generation
- CSV export/import
- Graphs and performance charts
- Student performance history
- JUnit automated testing
- Spring Boot implementation
- Cloud deployment
-🤝 Contributing
+For example:
+
+```text
+Scores:
+
+95.5
+88.0
+92.5
+74.0
+85.0
+68.5
+54.0
+98.5
+```
+
+The application calculates the average dynamically rather than using a hardcoded value.
+
+---
+
+# 🎯 Learning Objectives
+
+This project provides practical experience in several areas.
+
+## Core Java
+
+- Classes
+- Objects
+- Constructors
+- Methods
+- Encapsulation
+- Conditional statements
+- Loops
+- Exception handling
+- Input validation
+
+## Object-Oriented Programming
+
+- Data modeling
+- Encapsulation
+- Separation of responsibilities
+- Business logic organization
+
+## Java Collections
+
+- `ArrayList`
+- Adding elements
+- Removing elements
+- Updating elements
+- Searching
+- Iterating
+- Aggregate calculations
+
+## Backend Development
+
+- Java HTTP Server
+- HTTP methods
+- Request handling
+- API routing
+- JSON communication
+- Static file serving
+- Server-side business logic
+
+## Frontend Development
+
+- HTML5
+- CSS3
+- JavaScript
+- DOM manipulation
+- Fetch API
+- LocalStorage
+- Clipboard API
+- Responsive design
+
+---
+
+# 📸 Screenshots
+
+## Dashboard
+
+![Student Grade Tracker Dashboard](dashboard.png)
+
+The dashboard provides an overview of the class and allows users to manage student records.
+
+---
+
+## Summary Report
+
+![Student Grade Summary Report](summary-report.png)
+
+The Summary Report provides detailed information about overall class performance and individual student results.
+
+---
+
+# 🔮 Future Enhancements
+
+The current project focuses on Core Java and lightweight web development.
+
+Possible future enhancements include:
+
+- [ ] MySQL database integration
+- [ ] Student ID / Roll Number
+- [ ] Subject-wise marks
+- [ ] Multiple subjects per student
+- [ ] Semester-wise grade management
+- [ ] Search functionality
+- [ ] Student filtering
+- [ ] Sorting by score
+- [ ] Sorting by name
+- [ ] Attendance management
+- [ ] User authentication
+- [ ] Admin dashboard
+- [ ] PDF report generation
+- [ ] CSV export/import
+- [ ] Graphs and performance charts
+- [ ] Student performance history
+- [ ] JUnit automated testing
+- [ ] Spring Boot version
+- [ ] Cloud deployment
+
+---
+
+# 🔐 Security Considerations
+
+This project is primarily an educational application.
+
+The current version does not implement production-level authentication, authorization, or database security.
+
+For a production-ready version, the following could be added:
+
+- User authentication
+- Role-based authorization
+- Secure password storage
+- HTTPS
+- Database security
+- Input sanitization
+- API authentication
+- CSRF protection
+- Secure session management
+- Server-side validation
+
+---
+
+# 🧪 Testing
+
+The application can be manually tested using the following scenarios.
+
+### Add Student
+
+```text
+Enter:
+Name: Test Student
+Score: 85
+
+Expected:
+Student is added
+Grade: B
+Status: Passed
+```
+
+### Add Failed Student
+
+```text
+Enter:
+Name: Test Student
+Score: 45
+
+Expected:
+Grade: F
+Status: Failed
+```
+
+### Edit Student
+
+```text
+Change score from:
+75 → 95
+
+Expected:
+Grade changes from C → A
+Status remains Passed
+```
+
+### Delete Student
+
+```text
+Delete an existing student.
+
+Expected:
+Student disappears from the roster.
+Class statistics are recalculated.
+```
+
+### Generate Report
+
+```text
+Click:
+Summary Report
+
+Expected:
+Complete class report is generated.
+```
+
+---
+
+# 🤝 Contributing
 
 Contributions, suggestions, and improvements are welcome.
 
-Fork the Repository
+## 1. Fork the Repository
 
-Create your own fork of the repository on GitHub.
+Fork this repository on GitHub.
 
-Create a Feature Branch
+## 2. Create a Feature Branch
+
+```bash
 git checkout -b feature/your-feature
-Make Your Changes
+```
+
+## 3. Make Your Changes
 
 Implement and test your changes.
 
-Commit Your Changes
+## 4. Commit Your Changes
+
+```bash
 git add .
 git commit -m "Add: your feature"
-Push the Branch
+```
+
+## 5. Push Your Branch
+
+```bash
 git push origin feature/your-feature
+```
 
-Then open a Pull Request.
+Then create a Pull Request.
 
-📄 License
+---
 
-This project is primarily created for educational and academic purposes.
+# 📄 License
+
+This project is primarily created for **educational and academic purposes**.
 
 You are free to study, modify, and extend the project according to your requirements.
 
-👨‍💻 Author
-Chidananda P
+---
 
-Computer Science & Engineering Student
+# 👨‍💻 Author
 
-GitHub
+## Chidananda P
+
+**Computer Science & Engineering Student**
+
+### GitHub
 
 https://github.com/chidananda-p
 
-Project Repository
+### Project Repository
 
 https://github.com/chidananda-p/CodeAlpha_Student_Grade_Tracker
 
-⭐ Support
+---
 
-If you find this project useful for learning Core Java, OOP, Collections, HTTP servers, and web application development, consider giving the repository a ⭐ on GitHub.
+# ⭐ Support
 
-📌 Project Highlights
+If you find this project useful for learning **Core Java, Object-Oriented Programming, Java Collections, HTTP servers, REST-style APIs, and web application development**, consider giving the repository a ⭐ on GitHub.
+
+---
+
+# 📌 Project Highlights
+
+```text
 ╔══════════════════════════════════════════════╗
-║          STUDENT GRADE TRACKER              ║
+║           STUDENT GRADE TRACKER             ║
 ╠══════════════════════════════════════════════╣
 ║                                              ║
 ║  ✓ Core Java                                 ║
 ║  ✓ Object-Oriented Programming               ║
 ║  ✓ Java Collections / ArrayList              ║
-║  ✓ CRUD Operations                           ║
-║  ✓ Java HTTP Server                          ║
-║  ✓ REST-Style API                            ║
-║  ✓ JSON Communication                        ║
-║  ✓ HTML5                                     ║
-║  ✓ CSS3                                      ║
-║  ✓ Vanilla JavaScript                        ║
-║  ✓ Responsive User Interface                 ║
-║  ✓ Automatic Grade Calculation               ║
-║  ✓ Class Statistics                          ║
-║  ✓ Summary Report Generation                 ║
-║  ✓ Clipboard Support                         ║
-║  ✓ Text Report Download                      ║
+║  ✓ CRUD Operations                            ║
+║  ✓ Java HTTP Server                           ║
+║  ✓ REST-Style API                             ║
+║  ✓ JSON Communication                         ║
+║  ✓ HTML5                                      ║
+║  ✓ CSS3                                       ║
+║  ✓ Vanilla JavaScript                         ║
+║  ✓ Responsive User Interface                  ║
+║  ✓ Automatic Grade Calculation                ║
+║  ✓ Class Statistics                           ║
+║  ✓ Summary Report Generation                  ║
+║  ✓ Clipboard Support                          ║
+║  ✓ Text Report Download                       ║
 ║  ✓ Input Validation                           ║
 ║                                              ║
 ║  Database         : Not Required             ║
@@ -732,8 +1270,12 @@ If you find this project useful for learning Core Java, OOP, Collections, HTTP s
 ║  External Server  : Not Required             ║
 ║                                              ║
 ╚══════════════════════════════════════════════╝
-🚀 Built With
+```
 
-Core Java + Java HTTP Server + HTML5 + CSS3 + Vanilla JavaScript
+---
 
-A lightweight academic grade management application demonstrating how fundamental Java programming concepts can be combined with web technologies to build a complete, functional, and professional application.
+# 🚀 Built With
+
+**Core Java + Java HTTP Server + HTML5 + CSS3 + Vanilla JavaScript**
+
+> A lightweight academic grade management application demonstrating how fundamental Java programming concepts can be combined with web technologies to build a complete, functional, and professional application.
